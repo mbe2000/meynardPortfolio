@@ -134,7 +134,7 @@ h1 {
   font-family: "Manrope";
 }
 
-p {
+.body-description {
   font-size: 1rem;
   text-align: center;
   margin-top: 1.3rem;
@@ -206,8 +206,8 @@ section {
 }
 
 .project {
-  height: 500px;
-  background-color: rgb(24, 23, 23);
+  height: 520px;
+  background-color: rgb(22, 21, 21);
   border-radius: 10px;
   border: 2px solid white;
   position: relative;
@@ -220,25 +220,62 @@ section {
   color: var(--blue-color);
   font-family: "Asap", sans-serif;
   font-weight: bold;
-  font-size: 25px;
-  min-height: 20%;
+  font-size: 20px;
+  border-bottom: 1px solid var(--text-color);
+  margin-top: 30px;
+  padding-bottom: 15px;
+}
+
+.frame img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  max-height: 180px;
+  display: block;
+  margin: 20px auto;
 }
 
 .description {
   text-align: left;
   color: white;
   font-size: 12px;
-  min-height: 50%;
   font-style: italic;
+  border-top: 1px solid var(--text-color);
+  padding-top: 15px;
+  margin-bottom: 15px;
 }
 
 .prog-lang {
   text-align: left;
   color: white;
   font-size: 12px;
-  min-height: 20%;
+  border-top: 1px solid var(--text-color);
+  padding-top: 5px;
 }
 
+.logo-outer-frame {
+  display: flex;
+}
+
+.logo-frame {
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  margin: 5px 5px;
+  border: 1px solid white;
+  border-radius: 5px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.logo-frame img {
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+  margin: 0;
+  display: block;
+}
 /* <--------------- MEDIA ---------------> */
 
 /* Mobile (small devices) */
